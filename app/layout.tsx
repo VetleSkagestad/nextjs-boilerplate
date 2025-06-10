@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Menu from "./menu";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,10 +25,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body>
+        {/* A fixed-height, sticky menu */}
+        <header className="sticky top-0 z-50 h-16">
+          <Menu />
+        </header>
+
+        {/* Push everything down by 4rem (h-16) */}
+        <main className="pt-4">
+          {children}
+        </main>
       </body>
     </html>
   );
