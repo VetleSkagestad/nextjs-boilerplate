@@ -12,7 +12,7 @@ export default function Homepage() {
             <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300">Inland Game Development Cluster</p>
             </div>
           <Image
-            className="dark:invert"
+            // className="dark:invert"
             src="/discordikon2.png"
             alt="GameDev Syndicate logo"
             width={180}
