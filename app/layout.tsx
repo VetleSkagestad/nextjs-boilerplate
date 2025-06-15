@@ -1,17 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter  } from "next/font/google";
 import "./globals.css";
 import Menu from "./menu";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ['latin'], weight: ['300','400','500','600','700','800','900'] })
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -27,12 +19,12 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {/* A fixed-height, sticky menu */}
-        <header className="sticky top-0 z-50 h-16">
+        <header className="sticky top-0 z-50 h-15 inter.className">
           <Menu />
         </header>
 
         {/* Push everything down by 4rem (h-16) */}
-        <main className="pt-4">
+        <main className="inter.className">
           {children}
         </main>
       </body>

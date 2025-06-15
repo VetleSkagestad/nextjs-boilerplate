@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #242a38;
   --foreground: #5aa58c;
@@ -10,8 +11,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-inter);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,6 +33,20 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--titleTextColor);
   text-shadow: #272727 0px 2px 1px;
 }
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+
 p {
   color: var(--bodyTextColor);
 }
