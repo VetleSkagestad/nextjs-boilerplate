@@ -6,27 +6,32 @@ import Banner from "./components/banner";
 export default function Homepage() {
   return (
     <div>
-      <div className="w-full">
+      <div className="">
         <Banner />
       </div>
-      <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen pt-42 sm:pt-52 font-[family-name:var(--font-inter)]">
+      <div className="grid grid-rows-[20px_1fr_20px] flex justify-center items-center  justify-items-center min-h-screen pt-86 sm:pt-42 font-[family-name:var(--font-inter)] w-full sm:w-300 px-10 sm:px-20">
+
         <main className="flex flex-col gap-[36px] row-start-1 items-center sm:items-start">
           
           <div className="flex flex-col sm:flex-row items-center sm:items-end gap-6 sm:gap-10">
   
-            <div className="text-center sm:text-left">
-              <h1 className="text-4xl sm:text-5xl font-bold mb-2 text-white">GameDev Syndicate</h1>
-              <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300">Inland Game Development Cluster</p>
+            <div className="text-left sm:text-left">
+              <h1 className="text-4xl sm:text-5xl font-bold mb-2 text-white">Join the Syndicate.</h1>
+              <p className="text-lg sm:text-xl">
+                Dom Toretto faces perhaps his greatest test yet—not a car chase or gravity-defying stunt, but family drama on steroids. Dom discovers he has an estranged brother named Jakob, played by John Cena, 
+                who conveniently wasn't mentioned before despite Dom's lifelong mantra: “Family is everything.” Jakob, of course, has aligned himself with villains who want world domination through highly impractical means, 
+                prompting Dom and his loyal crew to jump back into their cars to save the day.
+              </p>
             </div>
-            <Image
+            {/* <Image
               src="/discordikon2.png"
               alt="GameDev Syndicate logo"
               width={180}
               height={38}
               priority
-            />
+            /> */}
           </div>
-          <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-inter)]">
+          {/* <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-inter)]">
             <li className="mb-2 tracking-[-.01em]">
               Get started by editing{" "}
               <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-inter)] font-semibold">
@@ -37,7 +42,7 @@ export default function Homepage() {
             <li className="tracking-[-.01em]">
               Save and see your changes instantly.
             </li>
-          </ol>
+          </ol> */}
 
           <div className="flex gap-4 items-center flex-col sm:flex-row">
             <a
@@ -47,13 +52,13 @@ export default function Homepage() {
               rel="noopener noreferrer"
             >
               <Image
-                className="dark:invert"
+                // className="dark:invert"
                 src="/vercel.svg"
                 alt="Vercel logomark"
                 width={20}
                 height={20}
               />
-              Deploy now
+              Contact us
             </a>
             <a
               className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
