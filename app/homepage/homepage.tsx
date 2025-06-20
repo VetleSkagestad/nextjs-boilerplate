@@ -7,7 +7,7 @@ export default function Homepage() {
   return (
     <div>
       <div className="">
-        <Banner />
+        {/* <Banner /> */}
       </div>
       <div className="grid grid-rows-[20px_1fr_20px] justify-center items-center justify-items-center min-h-screen pt-86 sm:pt-42 font-[family-name:var(--font-inter)] w-full sm:w-300 px-10 sm:px-20">
 
