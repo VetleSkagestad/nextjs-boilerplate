@@ -20,7 +20,7 @@ export default function RootLayout({
       <body>
         {/* A fixed-height, sticky menu */}
         <header className="sticky top-0 z-50 h-15 inter.className">
-          <Menu />
+          {/* <Menu /> */}
         </header>
 
         {/* Push everything down by 4rem (h-16) */}

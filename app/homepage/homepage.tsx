@@ -18,10 +18,9 @@ export default function Homepage() {
         <div className="text-left sm:text-left">
           <h1 className="text-4xl sm:text-5xl font-bold mb-2 text-white">Join the Syndicate.</h1>
           <p className="text-lg sm:text-xl">
-            Dom Toretto faces perhaps his greatest test yet—not a car chase or gravity-defying stunt, but family drama on steroids. Dom discovers he has an estranged brother named Jakob, played by John Cena, 
-            who conveniently wasn't mentioned before despite Dom's lifelong mantra: “Family is everything.” Jakob, of course, has aligned himself with villains who want world domination through highly impractical means, 
-            prompting Dom and his loyal crew to jump back into their cars to save the day.
+            This site is under development, but we are excited to have you here!
           </p>
+          <p>Contact us at Hello@gamedevsyndicate.com</p>
         </div>
         {/* <Image
           src="/discordikon2.png"
