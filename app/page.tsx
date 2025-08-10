@@ -1,10 +1,13 @@
-import Image from "next/image";
-import Homepage from "./homepage/homepage";
-
 export default function Home() {
   return (
-    <div>
-      <Homepage />
-    </div>
+    <section className="hero">
+      <img
+        src="https://via.placeholder.com/200"
+        alt="GameDev Syndicate Logo"
+        className="logo"
+      />
+      <h1>Welcome to GameDev Syndicate</h1>
+      <p>A collective of indie studios uniting to build the future of games.</p>
+    </section>
   );
 }

@@ -1,55 +1,21 @@
-import React from "react";
-
-
-
 export default function ContactPage() {
-    return (
-        <main className="container mx-auto max-w-lg py-12 px-4">
-            <h1 className="text-3xl font-bold mb-6 text-primary">Contact Us</h1>
-            <form className="space-y-4">
-                <div>
-                    <label htmlFor="name" className="block font-medium mb-1 text-primary">
-                        Name
-                    </label>
-                    <input
-                        id="name"
-                        name="name"
-                        type="text"
-                        required
-                        className="w-full border border-secondary rounded px-3 py-2 bg-background text-primary"
-                    />
-                </div>
-                <div>
-                    <label htmlFor="email" className="block font-medium mb-1 text-primary">
-                        Email
-                    </label>
-                    <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        required
-                        className="w-full border border-secondary rounded px-3 py-2 bg-background text-primary"
-                    />
-                </div>
-                <div>
-                    <label htmlFor="message" className="block font-medium mb-1 text-primary">
-                        Message
-                    </label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows={5}
-                        required
-                        className="w-full border border-secondary rounded px-3 py-2 bg-background text-primary"
-                    />
-                </div>
-                <button
-                    type="submit"
-                    className="bg-accent text-accent-foreground px-4 py-2 rounded hover:bg-accent-dark"
-                >
-                    Send Message
-                </button>
-            </form>
-        </main>
-    );
+  return (
+    <section className="container">
+      <div className="contact-form">
+        <h2>Contact Us</h2>
+        <form action="mailto:contact@gamedevsyndicate.com" method="post" encType="text/plain">
+          <label htmlFor="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label htmlFor="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label htmlFor="message">Message:</label>
+          <textarea id="message" name="message" rows={5} required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  );
 }
