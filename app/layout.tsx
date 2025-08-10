@@ -17,6 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+      </head>
       <body>
         {/* A fixed-height, sticky menu */}
         <header className="sticky top-0 z-50 h-15 inter.className">
